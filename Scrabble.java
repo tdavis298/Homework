@@ -36,6 +36,9 @@ public class Scrabble {
         String letterone = tiles[z];
         int result = letter.compareTo(letterone);
         System.out.println(result);
+        //prints the comparison of each letter in the word to each letter
+        //in the tiles, with the difference between the placements in the
+        //alphabet being the number it returns
       }
     }
   }
