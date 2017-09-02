@@ -5,31 +5,38 @@ import java.util.Arrays;
 public class Scrabble {
   public static void main(String[] args) throws Exception {
     int y = 0;
-  Scanner s = new Scanner(System.in);
-  Scanner su = new Scanner(System.in);
-  String[] tiles = new String[7];
-  //Creates new scanners to take user input
+    Scanner s = new Scanner(System.in);
+    Scanner su = new Scanner(System.in);
+    //Creates new scanners to take user input
 
-  System.out.println("Please enter up to 7 letters one at a time: ");
-  //Seven is the max number of tiles in Scrabble
+    String[] tiles = new String[7];
+    //Creates the array to take the letters
 
-  for (int i = 0; i < tiles.length; i++) {
-    tiles[i] = s.nextLine();
+    System.out.println("Please enter up to 7 letters one at a time: ");
+    //Seven is the max number of tiles in Scrabble
+
+    for (int i = 0; i < tiles.length; i++) {
+      tiles[i] = s.nextLine();
+      }
     //takes up to 7 tiles and puts them in an array
+
+    System.out.println("Enter word: ");
+    //asks user for word
+
+    String[] word = su.nextLine().split("");
+    //Creates an array to take the word
+
+    //Just to test
+    System.out.println(Arrays.toString(tiles));
+    System.out.println(Arrays.toString(word));
+
+    for (int x = 0; x < word.length; x++){
+      for(int z = 0; z < tiles.length; z++){
+        String letter = word[x];
+        String letterone = tiles[z];
+        int result = letter.compareTo(letterone);
+        System.out.println(result);
+      }
+    }
   }
-  String[] word = new String[1];
-  //creates array to take the word
-
-  System.out.println("Enter word: ");
-  //asks user for word
-
-  for (y = 0; y < word.length; y++) {
-    String[] wordArray = s.nextLine().split("");
-  }
-
-
-  //Just to test
-  System.out.println(Arrays.toString(tiles));
-  System.out.println(Arrays.toString(word));
-}
 }
