@@ -1,3 +1,8 @@
+/**Tucker Davis
+*9/2/2017
+*This is a simple program that uses user input to determine if a number of
+*letters on "Scrabble tiles" can form a word.*/
+
 import java.util.Scanner;
 //imports the scanner class
 import java.util.Arrays;
@@ -29,7 +34,7 @@ public class Scrabble {
 
     int u = word.length;
 
-    //Just to test
+    //Used for testing
     //System.out.println(Arrays.toString(tiles));
     //System.out.println(Arrays.toString(word));
 
